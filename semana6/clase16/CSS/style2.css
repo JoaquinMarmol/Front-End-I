@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header div.div-descuento  {
+    background-color: #1CD1B0;
+}
+
+header div.div-descuento p {
+    color: black;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+header div.div-nombre {
+    background-color: #00669F;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 2px;
+}
+
+header div.div-nombre h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 15px;
+}
+
+header nav.contacto {
+    background-color: #001D2D;
+}
+
+header nav.contacto ul {
+    list-style-type: none;
+    display: flex;
+    color: white;
+    flex-direction: row-reverse;
+    padding: 7px;
+}
+
+header nav.contacto ul li {
+    margin-right: 15px ;
+}
+
+
+/* SECTION */
+main {
+    position: relative;
+}
+.section-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    top: 25px;
+    background-color: #00669F;
+    border-radius: 25px;
+}
+
+.section-form #h1-añadir {
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 40px;
+}
+.section-form .p-agrega {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.section-form .article-formu {
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 50px 0 50px; */
+    justify-content: center;
+    height: 400px;
+}
+
+.section-form .article-formu form {
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+}
+
+.section-form .article-formu form.form-der {
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.section-form .article-formu form.form-izq textarea {
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.section-form .article-formu form .input-blanco {
+    border-radius: 10px;
+    height: 40px;
+    width: 270px;
+    border: 1px solid white;
+}
+
+.section-form .article-formu form .input-especie {
+    position: absolute;
+    left: 100px;
+}
