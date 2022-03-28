@@ -93,7 +93,8 @@ main {
 }
 
 .section-form .article-formu form.form-der {
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     margin-left: 25px;
 }
 
@@ -115,4 +116,16 @@ main {
 .section-form .article-formu form .input-especie {
     position: absolute;
     left: 100px;
+}
+select.especie{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 80px;
+    height: 30px;
 }
