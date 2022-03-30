@@ -36,10 +36,11 @@ header p{
 
 h1 {
     position: static;
+    text-align: center;
     max-width: 100%;
     font-style: normal;
     font-weight: 700;
-    font-size: 58px;
+    font-size: 55px;
     line-height: 66px;
     letter-spacing: -0.035em;
     color: #232C50;
@@ -86,7 +87,6 @@ p{
     line-height: 26px;
 }
 
-
 button{
     width: 134px;
     height: 44px;
@@ -103,29 +103,43 @@ button:hover{
     opacity: 0.8;
     box-shadow: 0 0.25rem 0.45rem rgba(243, 96, 59, 0.5);
 }
-span.contadores{
-    padding:7px 19px;
-    left: 1140.54px;
-    top: 65px;
-    background: #F3603B;
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    border: none;
-    color: #fff;
+.contadorcontainer{
+    display: flex;
+    flex-direction: column;  
+    position: relative;
+    bottom: 5rem;  
+}
+.listas{
+    display: flex;   
 }
 .contador{
-    display:flex;
-    text-align: center;
-    padding-left: 20px;
+    position: relative;
+    bottom: -6rem;   
+}
+.contador3{
+    position: relative;
+    bottom: -5.2rem;
+}
+.botonesimg{
+    margin: auto;
+    position: relative;
+    right: -2rem;
+    z-index: 9;
 }
 h3{
     color: #323851;
 }
 h3.subtitulitos{
+
     display: flex;
     color: #323851;
     background-color: rgb(255, 239, 234);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px; 
+    letter-spacing: -0.025em;
+    width: 70px;
+    height: 43px;
     align-items: center;
     padding-left:35px;
     width: 100%;  
@@ -135,7 +149,8 @@ h3.subtitulitos{
     margin-top: 17px;
     margin-bottom:40px ;
     text-align: left;
-    padding-left: 20px;
+    padding-left:-6rem;
+    width: 100%;
 }
 .abajo {
     display: flex;
@@ -152,16 +167,22 @@ h3.subtitulitos{
 .naranja{
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
-    height: 250px;
+    height: 350px;
     width: 100%;
     background-color:#F3613C;
     color: #fff;
 }
+.texto{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
 .naranja .botonblanco{
     background-color: #FFFFFF;
     color: #F3603B;
+    margin-top: 20px;
 }
 .botonblanco:hover{
     cursor: pointer;
@@ -177,8 +198,9 @@ h3.subtitulitos{
     gap: 1rem;
     display: flex;
     width: 100%;
-    overflow-x: scroll; /*:star2:*/
-    scroll-snap-type: x mandatory; /*:star2:*/
+    overflow-x: scroll; /*slice*/
+    scroll-snap-type: x mandatory; /*slide*/
+    border-radius: 15%;
   }
   
  .containerabajo .perfiles{
@@ -277,6 +299,11 @@ h3.subtitulitos{
   nav.futer ul a :hover{
       color: #F3603B;
   }
+  #youtube :hover{
+      color:#F3603B
+      tran
+  }
+  
   @media screen and (min-width:740px) {
     nav{
         display: flex;
@@ -285,7 +312,7 @@ h3.subtitulitos{
     ul{
         display: flex;
         align-items: center;
-        
+        color:#242E52 ;
     }
     li{
         margin-right: 1rem;
@@ -305,6 +332,7 @@ h3.subtitulitos{
         flex-direction: row; 
         justify-content: space-around;
         align-items: center;
+        padding: 5rem;
     }
     .arriba{
         display: flex;
@@ -411,5 +439,32 @@ h3.subtitulitos{
     
     #Community:hover{
         opacity: 0.7;
+    }
+    .contadorcontainer{ 
+        position: relative;
+        bottom: 5rem;  
+    }
+    .listas{
+        display: flex;   
+    }
+    .contador{
+        position: relative;
+        bottom: -5rem;   
+    }
+
+    #Pricing{
+        color:#242E52
+    }
+    #Product{
+        color:#242E52
+    }
+    #AboutUs{
+        color:#242E52
+    }
+    #Careers{
+        color:#242E52
+    }
+    #Community{
+        color:#242E52
     }
 } 
